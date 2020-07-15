@@ -18,7 +18,7 @@ def perform_deauth(ap, client, count, nic):
             print ("sending client to ap")
             sendp(pkt_to_ap, iface=nic)
             print ("sending ap to client")
-            sendp(pkt_to_c, iface="wlan0")
+            sendp(pkt_to_c, iface=nic)
 
 
         count-=1
